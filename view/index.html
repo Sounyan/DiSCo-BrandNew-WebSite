@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+        <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" type="770c68c7a5e5566f3e2bb842-text/javascript"></script>
+  <link rel="stylesheet" href="style.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  </head>
+  <body>
+  <div class="navbar-fixed">
+  <nav class="transparent z-depth-0
+">
+    <div class="nav-wrapper">
+      <div class="left"><a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a></div><a href="#" style="font-size: 24px;">DiSCo!</a> </div>
+  </nav>
+    </div>
+  <div class="parallax-container">
+            <h1 class="center" style="margin-bottom: 0;">DiSCo!</h1>
+            <div class="parallax"><img src="/new_parallax.webp"></div>
+</div>
+      <script>
+
+  function loadStyle(src) {
+        return new Promise(function (resolve, reject) {
+            let link = document.createElement('link');
+            link.href = src;
+            link.rel = 'stylesheet';
+    
+            link.onload = () => resolve(link);
+            link.onerror = () => reject(new Error(`Style load error for ${src}`));
+    
+            document.head.append(link);
+        });
+    }
+    window.onload = function () {      loadStyle("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap")
+        .then(() => loadStyle("https://fonts.googleapis.com/icon?family=Material+Icons"))
+    }
+  </script> 
+
+  </body>
+</html>
